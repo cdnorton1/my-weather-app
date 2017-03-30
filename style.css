@@ -1,0 +1,47 @@
+/*#main {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}*/
+
+body {
+    color: #fff;
+    background-image: url('sunny.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#userCity {
+    border-radius: 5px;
+}
+
+.container {
+    color: #000;
+    width: 400px;
+    height: 300px;
+    margin: 20px auto;
+    text-align: center;
+    background-color: rgba(237, 243, 245, 0.7);
+    padding: 40px 0;
+    border-radius: 10px;
+}
+
+#getWeather {
+    margin-top: 20px;
+}
+
+#currentWeather {
+    margin: 40px auto;
+}
+
+#currentWeatherTemp {
+    font-size: 3em;
+}
+
+#weatherInput {
+    text-align: center;
+    width: 100%;
+    margin: 20px auto;
+}
