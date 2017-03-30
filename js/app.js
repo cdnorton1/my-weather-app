@@ -31,13 +31,13 @@ $(document).ready(function() {
 
 
                 if (weather == "Clear") {
-                    main_bg.style.backgroundImage = 'url("../img/sunny.jpg")';
+                    main_bg.style.backgroundImage = 'url("img/sunny.jpg")';
                 } else if (weather == "Rain") {
-                    main_bg.style.backgroundImage = 'url("../img/rainy.jpg")';
+                    main_bg.style.backgroundImage = 'url("img/rainy.jpg")';
                 } else if (weather == "Overcast" || weather == "Mostly Cloudy") {
-                    main_bg.style.backgroundImage = 'url("../img/cloudy.jpeg")';
+                    main_bg.style.backgroundImage = 'url("img/cloudy.jpeg")';
                 } else if (weather == "Snow") {
-                    main_bg.style.backgroundImage = 'url("../img/snowy.jpeg")';
+                    main_bg.style.backgroundImage = 'url("img/snowy.jpeg")';
                 }
             }
         });
