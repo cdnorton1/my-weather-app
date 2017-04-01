@@ -6,80 +6,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>myWeatherApp</title>
+    <link href="https://fonts.googleapis.com/css?family=Dosis:200,400|Pacifico|Raleway:100,300,400" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body id="main">
     <div id="weatherInput">
-        <form>
-            <input id="userCity" type="text" name="city" placeholder="City" value="">
-            <select id="userState" name="states">
-                    <option value="select">Select State</option>
-                    <option value="al">AL</option>
-                    <option value="ak">AK</option>
-                    <option value="az">AZ</option>
-                    <option value="ar">AR</option>
-                    <option value="ca">CA</option>
-                    <option value="co">CO</option>
-                    <option value="ct">CT</option>
-                    <option value="de">DE</option>
-                    <option value="fl">FL</option>
-                    <option value="ga">GA</option>
-                    <option value="hi">HI</option>
-                    <option value="id">ID</option>
-                    <option value="il">IL</option>
-                    <option value="in">IN</option>
-                    <option value="ia">IA</option>
-                    <option value="ks">KS</option>
-                    <option value="ky">KY</option>
-                    <option value="la">LA</option>
-                    <option value="me">ME</option>
-                    <option value="md">MD</option>
-                    <option value="ma">MA</option>
-                    <option value="mi">MI</option>
-                    <option value="mn">MN</option>
-                    <option value="ms">MS</option>
-                    <option value="mo">MO</option>
-                    <option value="mt">MT</option>
-                    <option value="ne">NE</option>
-                    <option value="nv">NV</option>
-                    <option value="nh">NH</option>
-                    <option value="nj">NJ</option>
-                    <option value="nm">NM</option>
-                    <option value="ny">NY</option>
-                    <option value="nc">NC</option>
-                    <option value="nd">ND</option>
-                    <option value="oh">OH</option>
-                    <option value="ok">OK</option>
-                    <option value="or">OR</option>
-                    <option value="pa">PA</option>
-                    <option value="ri">RI</option>
-                    <option value="sc">SC</option>
-                    <option value="sd">SD</option>
-                    <option value="tn">TN</option>
-                    <option value="tx">TX</option>
-                    <option value="ut">UT</option>
-                    <option value="vt">VT</option>
-                    <option value="va">VA</option>
-                    <option value="wa">WA</option>
-                    <option value="wv">WV</option>
-                    <option value="wi">WI</option>
-                    <option value="wy">WY</option>
-            </select>
+        <form class="form-inline">
+            <div class="form-group">
+                <!--<label for="city">City</label>-->
+                <input id="userCity" class="form-control" type="text" placeholder="City" name="city">
+                <!--<label for="state">State</label>-->
+                <select id="userState" class="form-control" name="states">
+                        <option value="select">Select State</option>
+                        <option value="al">AL</option>
+                        <option value="ak">AK</option>
+                        <option value="az">AZ</option>
+                        <option value="ar">AR</option>
+                        <option value="ca">CA</option>
+                        <option value="co">CO</option>
+                        <option value="ct">CT</option>
+                        <option value="de">DE</option>
+                        <option value="fl">FL</option>
+                        <option value="ga">GA</option>
+                        <option value="hi">HI</option>
+                        <option value="id">ID</option>
+                        <option value="il">IL</option>
+                        <option value="in">IN</option>
+                        <option value="ia">IA</option>
+                        <option value="ks">KS</option>
+                        <option value="ky">KY</option>
+                        <option value="la">LA</option>
+                        <option value="me">ME</option>
+                        <option value="md">MD</option>
+                        <option value="ma">MA</option>
+                        <option value="mi">MI</option>
+                        <option value="mn">MN</option>
+                        <option value="ms">MS</option>
+                        <option value="mo">MO</option>
+                        <option value="mt">MT</option>
+                        <option value="ne">NE</option>
+                        <option value="nv">NV</option>
+                        <option value="nh">NH</option>
+                        <option value="nj">NJ</option>
+                        <option value="nm">NM</option>
+                        <option value="ny">NY</option>
+                        <option value="nc" selected>NC</option>
+                        <option value="nd">ND</option>
+                        <option value="oh">OH</option>
+                        <option value="ok">OK</option>
+                        <option value="or">OR</option>
+                        <option value="pa">PA</option>
+                        <option value="ri">RI</option>
+                        <option value="sc">SC</option>
+                        <option value="sd">SD</option>
+                        <option value="tn">TN</option>
+                        <option value="tx">TX</option>
+                        <option value="ut">UT</option>
+                        <option value="vt">VT</option>
+                        <option value="va">VA</option>
+                        <option value="wa">WA</option>
+                        <option value="wv">WV</option>
+                        <option value="wi">WI</option>
+                        <option value="wy">WY</option>
+                </select>
+            </div>
         </form>
-        <button id="getWeather">Get Weather</button>
-    </div>
-    <div class="container">
-        <div>
-            <h2 id="currentWeather"></h2>
-        </div>
-        <div id="currentWeatherTemp"></div>
-        <div id="forecastImg"></div>
-        <div id="forecast"></div>
-        <!--<div id="userLocation"></div>-->
+        <button id="getWeather" class="btn btn-primary btn-lg">Get Weather</button>
     </div>
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <h2 id="currentWeather"></h2>
+                <p id="currentWeatherTemp"></p>
+                <p id="feelsLikeTemp"></p>
+                <p id="forecastImg"></p>
+                <p id="forecast"></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center" id="footer">
+        <p>Powered by:<br><img src="http://icons.wxug.com/graphics/wu2/logo_130x80.png" alt="Weather Underground Logo"></p>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="js/app.js"></script>
 </body>
 

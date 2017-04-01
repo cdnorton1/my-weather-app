@@ -1,12 +1,13 @@
-/*#main {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}*/
+/*GOOGLE FONTS
+
+font-family: 'Raleway', sans-serif;
+font-family: 'Dosis', sans-serif;
+font-family: 'Pacifico', cursive;*/
 
 body {
+    width: 100%;
     color: #fff;
-    background-image: url('../img/sunny.jpg');
+    background-image: url('../img/main-bg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -18,14 +19,40 @@ body {
 }
 
 .container {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
     color: #000;
-    width: 400px;
+    width: 50%;
     height: 300px;
     margin: 20px auto;
     text-align: center;
-    background-color: rgba(237, 243, 245, 0.7);
-    padding: 40px 0;
+    background-color: rgba(237, 243, 245, 0.8);
+    padding: 0 10px;
     border-radius: 10px;
+    -webkit-box-shadow: 7px 11px 17px 0px rgba(50, 50, 50, 0.7);
+    -moz-box-shadow: 7px 11px 17px 0px rgba(50, 50, 50, 0.7);
+    box-shadow: 7px 11px 17px 0px rgba(50, 50, 50, 0.7);
+}
+
+#footer {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    font-size: 1.2em;
+    color: #000;
+    width: 15%;
+    margin: 60px auto;
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(237, 243, 245, 0.8);
+    border-radius: 10px;
+    -webkit-box-shadow: 7px 11px 17px 0px rgba(50, 50, 50, 0.7);
+    -moz-box-shadow: 7px 11px 17px 0px rgba(50, 50, 50, 0.7);
+    box-shadow: 7px 11px 17px 0px rgba(50, 50, 50, 0.7);
+}
+
+#footer img {
+    width: 60px;
+    height: 40px;
 }
 
 #getWeather {
@@ -33,10 +60,13 @@ body {
 }
 
 #currentWeather {
-    margin: 40px auto;
+    margin: 20px auto;
 }
 
 #currentWeatherTemp {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    margin: 10px auto;
     font-size: 3em;
 }
 
